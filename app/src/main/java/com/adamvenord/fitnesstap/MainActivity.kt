@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Hi User", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
@@ -36,7 +36,8 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_food,
+                R.id.nav_exercise, R.id.nav_profile,
                 R.id.nav_tools, R.id.nav_share, R.id.nav_send
             ), drawerLayout
         )
